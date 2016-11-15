@@ -1,0 +1,7 @@
+---
+layout: "main"
+category: "計畫緣起"
+---
+<div class="content">
+<h2><%= @document.basename %></h2>
+</div>

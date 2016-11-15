@@ -1,0 +1,7 @@
+---
+layout: "main"
+category: "熠星專案"
+---
+<div class="content">
+<h2><%= @document.basename %></h2>
+</div>

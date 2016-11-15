@@ -1,0 +1,177 @@
+<!doctype html>
+
+<html lang="zh">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title><%= if @document.title then "#{@document.title} | #{@site.title}" else @site.title %></title>
+
+	<!-- Bulma -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.2.3/css/bulma.min.css">
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
+
+	<!-- custom css -->
+	<%- @getBlock("styles").add(["/css/main.css"]).toHTML() %>
+</head>
+<body>
+	<section class="hero is-primary home-hero">
+		<div class="hero-head">
+			<div class="container">
+				<nav class="nav">
+					<div class="nav-left">
+						<a class="nav-item is-brand" href="http://www.mdjh.ptc.edu.tw/seniorcare/">
+							<img class="main-logo" src="/images/logo.png">
+							<h1 class="main-title"><%= @site.title %></h1>
+
+						</a>
+					</div>
+
+					<span id="nav-toggle" class="nav-toggle"><span></span><span></span><span></span></span>
+
+					<div id="nav-menu" class="nav-right nav-menu">
+						<span class="nav-item">
+							<a class="button is-light is-outlined fb-button" href="https://www.facebook.com/groups/719032051540147/">
+								<span class="icon">
+									<img src="/images/square-facebook-20.png">
+								</span>
+								<span>屏東心長照情</span>
+							</a>
+						</span>
+					</div>
+				</nav>
+			</div>
+		</div>
+
+		<div class="hero-body hero-bg is-hidden-mobile">
+			<div class="container">
+			</div>
+		</div>
+
+		<div class="hero-foot main-tab">
+			<div class="container">
+				<nav class="tabs is-boxed">
+					<ul>
+						<li class="<%= if @document.category is '計畫緣起' then 'is-active' else ''%>">
+							<a href="/seniorcare/計畫緣起/index.html">
+								計畫緣起
+							</a>
+						</li>
+						<li class="<%= if @document.category is '課程與教學' then 'is-active' else ''%>">
+							<a href="/seniorcare/課程與教學/index.html">
+								課程與教學
+							</a>
+						</li>
+						<li class="<%= if @document.category is '熠星專案' then 'is-active' else ''%>">
+							<a href="/seniorcare/熠星專案/index.html">
+								熠星專案
+							</a>
+						</li>
+						<li class="<%= if @document.category is '教學成果' then 'is-active' else ''%>">
+							<a href="/seniorcare/教學成果/index.html">
+								教學成果
+							</a>
+						</li>
+						<li class="<%= if @document.category is '長照相關連結' then 'is-active' else ''%>">
+							<a href="/seniorcare/長照相關連結/網路資源.html">
+								長照相關連結
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</section>
+
+	<!-- SECONDARY NAV, TERRIBLE KLUDGE -->
+
+
+	<% if @document.category is '計畫緣起': %>
+	<nav class="nav has-shadow secondary-tab">
+		<div class="container">
+			<div class="nav-left">
+				<a class="nav-item is-tab <%= if @document.basename is '背景' then 'is-active' else ''%>" href="/seniorcare/計畫緣起/背景.html">
+					背景
+				</a>
+				<a class="nav-item is-tab <%= if @document.basename is '政策' then 'is-active' else ''%>" href="/seniorcare/計畫緣起/政策.html">
+					政策
+				</a>
+				<a class="nav-item is-tab <%= if @document.basename is '組織' then 'is-active' else ''%>" href="/seniorcare/計畫緣起/組織.html">
+					組織
+				</a>
+				<a class="nav-item is-tab <%= if @document.basename is '策略規劃' then 'is-active' else ''%>" href="/seniorcare/計畫緣起/策略規劃.html">
+					策略規劃
+				</a>
+			</div>
+		</div>
+	</nav>
+	<% end %>
+
+	<% if @document.category is '課程與教學': %>
+	<nav class="nav has-shadow secondary-tab">
+		<div class="container">
+			<div class="nav-left">
+				<a class="nav-item is-tab <%= if @document.basename is '課程目標' then 'is-active' else ''%>" href="/seniorcare/課程與教學/課程目標.html">
+					課程目標
+				</a>
+				<a class="nav-item is-tab <%= if @document.basename is '學習主題' then 'is-active' else ''%>" href="/seniorcare/課程與教學/學習主題.html">
+					學習主題
+				</a>
+				<a class="nav-item is-tab <%= if @document.basename is '教學實施' then 'is-active' else ''%>" href="/seniorcare/課程與教學/教學實施.html">
+					教學實施
+				</a>
+				<a class="nav-item is-tab <%= if @document.basename is '教案範例' then 'is-active' else ''%>" href="/seniorcare/課程與教學/教案範例.html">
+					教案範例
+				</a>
+			</div>
+		</div>
+	</nav>
+	<% end %>
+
+	<% if @document.category is '熠星專案': %>
+	<nav class="nav has-shadow secondary-tab">
+		<div class="container">
+			<div class="nav-left">
+				<a class="nav-item is-tab <%= if @document.basename is '微電影' then 'is-active' else ''%>" href="/seniorcare/熠星專案/微電影.html">
+					微電影
+				</a>
+				<a class="nav-item is-tab <%= if @document.basename is '電子書' then 'is-active' else ''%>" href="/seniorcare/熠星專案/電子書.html">
+					電子書
+				</a>
+			</div>
+		</div>
+	</nav>
+	<% end %>
+
+	<% if @document.category is '長照相關連結': %>
+	<nav class="nav has-shadow secondary-tab">
+		<div class="container">
+			<div class="nav-left">
+				<a class="nav-item is-tab <%= if @document.basename is '網路資源' then 'is-active' else ''%>" href="/seniorcare/長照相關連結/網路資源.html">
+					網路資源
+				</a>
+				<a class="nav-item is-tab <%= if @document.basename is '影片資源' then 'is-active' else ''%>" href="/seniorcare/長照相關連結/影片資源.html">
+					影片資源
+				</a>
+				<a class="nav-item is-tab <%= if @document.basename is '書籍繪本' then 'is-active' else ''%>" href="/seniorcare/長照相關連結/書籍繪本.html">
+					書籍繪本
+				</a>
+				<a class="nav-item is-tab <%= if @document.basename is '桌遊媒材' then 'is-active' else ''%>" href="/seniorcare/長照相關連結/桌遊媒材.html">
+					桌遊媒材
+				</a>
+			</div>
+		</div>
+	</nav>
+	<% end %>
+
+
+	<section class="section">
+		<div class="container">
+			<%- @content %>
+		</div>
+	</section>
+</body>
+</html>

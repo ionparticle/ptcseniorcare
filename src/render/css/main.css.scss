@@ -1,0 +1,102 @@
+/* Framework Overrides */
+a {
+	color: blue;
+}
+
+/* Helpers */
+.num-zh li {
+	list-style-type: cjk-ideographic;
+}
+.num-dec li {
+	list-style-type: decimal;
+}
+
+
+/* Main Layout */
+.main-title {
+	font-size: 2.5em;
+	color: white;
+}
+.main-logo {
+	max-height: 47px !important;
+	margin-right: 0.5em;
+}
+.fa-facebook {
+	color: #3b5998;
+}
+.home-hero {
+	background-color: rgb(76, 175, 80) !important;
+}
+.hero-bg {
+	height: 128px;
+	background: url('/images/header-2048.jpg'); /* Add Media Query Alts for phones */
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+}
+.main-tab {
+	font-size: 1.4em;
+}
+.secondary-tab {
+	font-size: 1.2em;
+}
+.main-box-icon {
+	margin-right: 0.5em;
+}
+
+/* Home Page */
+.boxes a {
+	font-size: 1.6em;
+}
+.box-image {
+	height: 150px;
+}
+.box1 {
+	height: 150px;
+	background: url('/images/box1.jpg') center / cover; /* add media query alts for phones */
+}
+.box2 {
+	height: 150px;
+	background: url('/images/box2.jpg') center / cover; /* add media query alts for phones */
+}
+.box3 {
+	height: 150px;
+	background: url('/images/box3.jpg') center / cover; /* add media query alts for phones */
+}
+.box4 {
+	height: 150px;
+	background: url('/images/box4.jpg') center / cover; /* add media query alts for phones */
+}
+.box5 {
+	height: 150px;
+	background: url('/images/box5.jpg') center / cover; /* add media query alts for phones */
+}
+
+/* Other Page's Table Width Adjustments */
+
+.eldercare_title {
+	min-width: 14em;
+}
+.movie-title {
+	min-width: 8em;
+}
+.movie-length {
+	min-width: 7em;
+}
+.obj-num-title {
+	min-width: 4em;
+}
+.obj-type-title {
+	width: 8em;
+}
+
+/* Teaching > Theme */
+.vert-text {
+	writing-mode: vertical-rl;
+	-ms-writing-mode: tb-rl;
+}
+.head-vert {
+	width: 3.5em;
+}
+.head-num {
+	width: 4em;
+}
