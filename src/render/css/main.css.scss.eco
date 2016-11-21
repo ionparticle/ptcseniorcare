@@ -90,6 +90,7 @@ a {
 }
 
 /* Teaching > Theme */
+/* 課程與教學 > 學習主題 */
 .vert-text {
 	writing-mode: vertical-rl;
 	-ms-writing-mode: tb-rl;
@@ -99,4 +100,52 @@ a {
 }
 .head-num {
 	width: 4em;
+}
+
+/* Teaching > Implementation */
+/* 課程與教學 > 教學實施 */
+$impl-table-td-text-width: 5.5em;
+$impl-table-td-padding: 1em;
+$impl-table-td-width: $impl-table-td-text-width + $impl-table-td-padding;
+$impl-table-td-border-size: 2px;
+
+table.impl-table-chart {
+	width: auto;
+	border-spacing: 1em;
+	border-collapse: separate;
+}
+table.impl-table-chart td {
+	width: $impl-table-td-width;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: $impl-table-td-text-width;
+	padding: $impl-table-td-padding;
+}
+table.impl-table-chart td.impl-chart-1 {
+	border: $impl-table-td-border-size solid #448aff;
+}
+table.impl-table-chart td.impl-chart-2 {
+	border: $impl-table-td-border-size solid #66bb6a;
+}
+table.impl-table-chart td.impl-chart-3 {
+	border: $impl-table-td-border-size solid #8d6e63;
+}
+table.impl-table-chart td.impl-chart-4 {
+	border: $impl-table-td-border-size solid #ffee58;
+}
+table.impl-table-chart td.impl-chart-5 {
+	border: $impl-table-td-border-size solid #757575;
+	background: #ffe0b2;
+}
+table.impl-table-chart td.impl-chart-6 {
+	border: $impl-table-td-border-size solid #ff7043;
+}
+table.impl-table-chart td.impl-chart-7 {
+	border: $impl-table-td-border-size solid #ff5252;
+}
+table.impl-table-chart td.impl-chart-8 {
+	border: $impl-table-td-border-size solid #ec407a;
+}
+table.impl-table-chart td.impl-chart-9 {
+	border: $impl-table-td-border-size solid #ab47bc;
 }
