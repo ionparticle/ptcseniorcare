@@ -1,7 +1,7 @@
 ---
 layout: "main"
 isCategory: true
-category: "熠星專案"
+category: "熠星方案"
 ---
 <div class="content">
 <h2><%= @document.category %></h2>

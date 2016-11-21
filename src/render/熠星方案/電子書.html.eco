@@ -1,6 +1,6 @@
 ---
 layout: "main"
-category: "熠星專案"
+category: "熠星方案"
 ---
 <div class="content">
 <h2><%= @document.basename %></h2>
