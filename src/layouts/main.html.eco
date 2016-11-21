@@ -51,122 +51,48 @@
 			</div>
 		</div>
 
+		<!-- PRIMARY NAV -->
 		<div class="hero-foot main-tab">
 			<div class="container">
 				<nav class="tabs is-boxed">
 					<ul>
-						<li class="<%= if @document.category is '計畫緣起' then 'is-active' else ''%>">
-							<a href="/seniorcare/計畫緣起/index.html">
-								計畫緣起
-							</a>
-						</li>
-						<li class="<%= if @document.category is '課程與教學' then 'is-active' else ''%>">
-							<a href="/seniorcare/課程與教學/index.html">
-								課程與教學
-							</a>
-						</li>
-						<li class="<%= if @document.category is '熠星專案' then 'is-active' else ''%>">
-							<a href="/seniorcare/熠星專案/index.html">
-								熠星專案
-							</a>
-						</li>
-						<li class="<%= if @document.category is '教學成果' then 'is-active' else ''%>">
-							<a href="/seniorcare/教學成果/index.html">
-								教學成果
-							</a>
-						</li>
-						<li class="<%= if @document.category is '長照相關連結' then 'is-active' else ''%>">
-							<a href="/seniorcare/長照相關連結/網路資源.html">
-								長照相關連結
-							</a>
-						</li>
+						<% for category,info of @site.categories: %>
+							<li class="<%- if @document.category is category then 'is-active' else '' %>">
+								<a href="<%- info.link %>">
+									<%- category %>
+								</a>
+							</li>
+						<% end %>
 					</ul>
 				</nav>
 			</div>
 		</div>
 	</section>
 
-	<!-- SECONDARY NAV, TERRIBLE KLUDGE -->
+	<!-- SECONDARY NAV -->
 
-
-	<% if @document.category is '計畫緣起': %>
-	<nav class="nav has-shadow secondary-tab">
-		<div class="container">
-			<div class="nav-left">
-				<a class="nav-item is-tab <%= if @document.basename is '背景' then 'is-active' else ''%>" href="/seniorcare/計畫緣起/背景.html">
-					背景
-				</a>
-				<a class="nav-item is-tab <%= if @document.basename is '政策' then 'is-active' else ''%>" href="/seniorcare/計畫緣起/政策.html">
-					政策
-				</a>
-				<a class="nav-item is-tab <%= if @document.basename is '組織' then 'is-active' else ''%>" href="/seniorcare/計畫緣起/組織.html">
-					組織
-				</a>
-				<a class="nav-item is-tab <%= if @document.basename is '策略規劃' then 'is-active' else ''%>" href="/seniorcare/計畫緣起/策略規劃.html">
-					策略規劃
-				</a>
+	<% secondarynav = (links) => %>
+		<nav class="nav has-shadow secondary-tab">
+			<div class="container">
+				<div class="nav-left">
+					<% for link in links: %>
+						<a class="nav-item is-tab <%= if @document.basename is link then 'is-active' else '' %>"
+							href="<%- @getPath(@document.category + "/" + link + ".html") %>">
+							<%= link %>
+						</a>
+					<% end %>
+				</div>
 			</div>
-		</div>
-	</nav>
+		</nav>
 	<% end %>
 
-	<% if @document.category is '課程與教學': %>
-	<nav class="nav has-shadow secondary-tab">
-		<div class="container">
-			<div class="nav-left">
-				<a class="nav-item is-tab <%= if @document.basename is '課程目標' then 'is-active' else ''%>" href="/seniorcare/課程與教學/課程目標.html">
-					課程目標
-				</a>
-				<a class="nav-item is-tab <%= if @document.basename is '學習主題' then 'is-active' else ''%>" href="/seniorcare/課程與教學/學習主題.html">
-					學習主題
-				</a>
-				<a class="nav-item is-tab <%= if @document.basename is '教學實施' then 'is-active' else ''%>" href="/seniorcare/課程與教學/教學實施.html">
-					教學實施
-				</a>
-				<a class="nav-item is-tab <%= if @document.basename is '教案範例' then 'is-active' else ''%>" href="/seniorcare/課程與教學/教案範例.html">
-					教案範例
-				</a>
-			</div>
-		</div>
-	</nav>
+	<% for category,info of @site.categories: %>
+		<% if "pages" of info && category is @document.category: %>
+			<%= secondarynav info.pages %>
+		<% end %>
 	<% end %>
 
-	<% if @document.category is '熠星專案': %>
-	<nav class="nav has-shadow secondary-tab">
-		<div class="container">
-			<div class="nav-left">
-				<a class="nav-item is-tab <%= if @document.basename is '微電影' then 'is-active' else ''%>" href="/seniorcare/熠星專案/微電影.html">
-					微電影
-				</a>
-				<a class="nav-item is-tab <%= if @document.basename is '電子書' then 'is-active' else ''%>" href="/seniorcare/熠星專案/電子書.html">
-					電子書
-				</a>
-			</div>
-		</div>
-	</nav>
-	<% end %>
-
-	<% if @document.category is '長照相關連結': %>
-	<nav class="nav has-shadow secondary-tab">
-		<div class="container">
-			<div class="nav-left">
-				<a class="nav-item is-tab <%= if @document.basename is '網路資源' then 'is-active' else ''%>" href="/seniorcare/長照相關連結/網路資源.html">
-					網路資源
-				</a>
-				<a class="nav-item is-tab <%= if @document.basename is '影片資源' then 'is-active' else ''%>" href="/seniorcare/長照相關連結/影片資源.html">
-					影片資源
-				</a>
-				<a class="nav-item is-tab <%= if @document.basename is '書籍繪本' then 'is-active' else ''%>" href="/seniorcare/長照相關連結/書籍繪本.html">
-					書籍繪本
-				</a>
-				<a class="nav-item is-tab <%= if @document.basename is '桌遊媒材' then 'is-active' else ''%>" href="/seniorcare/長照相關連結/桌遊媒材.html">
-					桌遊媒材
-				</a>
-			</div>
-		</div>
-	</nav>
-	<% end %>
-
+	<!-- CONTENT SECTION -->
 
 	<section class="section">
 		<div class="container">

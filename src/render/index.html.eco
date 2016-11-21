@@ -1,55 +1,19 @@
 ---
 layout: "main"
-isNotHome: false
+category: "首頁"
 ---
 <div class="columns is-multiline boxes">
-	<div class="column is-half-tablet is-one-third-desktop">
-		<div class="card is-fullwidth has-shadow">
-			<div class="card-image box-image box1">
+	<% for category,info of @site.categories: %>
+		<% if !info.home: %>
+			<div class="column is-half-tablet is-one-third-desktop">
+				<div class="card is-fullwidth has-shadow">
+					<div class="card-image box-image <%- info.pic %>">
+					</div>
+					<footer class="card-footer">
+						<a href="<%- info.link %>" class="card-footer-item"><i class="fa <%- info.icon %> main-box-icon" aria-hidden="true"></i> <%- category %></a>
+					</footer>
+				</div>
 			</div>
-			<footer class="card-footer">
-				<a href="/seniorcare/計畫緣起/index.html" class="card-footer-item"><i class="fa fa-map-o main-box-icon" aria-hidden="true"></i> 計畫緣起</a>
-			</footer>
-		</div>
-	</div>
-
-	<div class="column is-half-tablet is-one-third-desktop">
-		<div class="card is-fullwidth has-shadow">
-			<div class="card-image box-image box2">
-			</div>
-			<footer class="card-footer">
-				<a href="/seniorcare/課程與教學/index.html" class="card-footer-item"><i class="fa fa-book main-box-icon" aria-hidden="true"></i> 課程與教學</a>
-			</footer>
-		</div>
-	</div>
-
-	<div class="column is-half-tablet is-one-third-desktop">
-		<div class="card is-fullwidth has-shadow">
-			<div class="card-image box-image box3">
-			</div>
-			<footer class="card-footer">
-				<a href="/seniorcare/熠星專案/index.html" class="card-footer-item"><i class="fa fa-film main-box-icon" aria-hidden="true"></i> 熠星專案</a>
-			</footer>
-		</div>
-	</div>
-
-	<div class="column is-half-tablet is-one-third-desktop">
-		<div class="card is-fullwidth has-shadow">
-			<div class="card-image box-image box4">
-			</div>
-			<footer class="card-footer">
-				<a href="/seniorcare/教學成果/index.html" class="card-footer-item"><i class="fa fa-graduation-cap main-box-icon" aria-hidden="true"></i> 教學成果</a>
-			</footer>
-		</div>
-	</div>
-
-	<div class="column is-half-tablet is-one-third-desktop">
-		<div class="card is-fullwidth has-shadow">
-			<div class="card-image box-image box5">
-			</div>
-			<footer class="card-footer">
-				<a href="/seniorcare/長照相關連結/index.html" class="card-footer-item"><i class="fa fa-camera main-box-icon" aria-hidden="true"></i> 長照相關連結</a>
-			</footer>
-		</div>
-	</div>
+		<% end %>
+	<% end %>
 </div>
