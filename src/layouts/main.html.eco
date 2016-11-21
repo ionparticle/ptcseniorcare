@@ -15,7 +15,7 @@
 	<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
 
 	<!-- custom css -->
-	<%- @getBlock("styles").add(["/css/main.css"]).toHTML() %>
+	<%- @getBlock("styles").add([@getCssPath("main.css")]).toHTML() %>
 </head>
 <body>
 	<section class="hero is-primary home-hero">
@@ -23,8 +23,8 @@
 			<div class="container">
 				<nav class="nav">
 					<div class="nav-left">
-						<a class="nav-item is-brand" href="http://www.mdjh.ptc.edu.tw/seniorcare/">
-							<img class="main-logo" src="/images/logo.png">
+						<a class="nav-item is-brand" href="<%- @getPath() %>">
+							<img class="main-logo" src="<%- @getImgPath("logo.png") %>">
 							<h1 class="main-title"><%= @site.title %></h1>
 
 						</a>
@@ -36,7 +36,7 @@
 						<span class="nav-item">
 							<a class="button is-light is-outlined fb-button" href="https://www.facebook.com/groups/719032051540147/">
 								<span class="icon">
-									<img src="/images/square-facebook-20.png">
+									<img src="<%- @getImgPath("square-facebook-20.png") %>">
 								</span>
 								<span>屏東心長照情</span>
 							</a>

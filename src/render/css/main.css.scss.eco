@@ -29,7 +29,7 @@ a {
 }
 .hero-bg {
 	height: 128px;
-	background: url('/images/header-2048.jpg'); /* Add Media Query Alts for phones */
+	background: url('<%- @getImgPath("header-2048.jpg") %>'); /* Add Media Query Alts for phones */
 	border-top: 1px solid white;
 	border-bottom: 1px solid white;
 }
@@ -52,23 +52,23 @@ a {
 }
 .box1 {
 	height: 150px;
-	background: url('/images/box1.jpg') center / cover; /* add media query alts for phones */
+	background: url('<%- @getImgPath("box1.jpg") %>') center / cover; /* add media query alts for phones */
 }
 .box2 {
 	height: 150px;
-	background: url('/images/box2.jpg') center / cover; /* add media query alts for phones */
+	background: url('<%- @getImgPath("box2.jpg") %>') center / cover; /* add media query alts for phones */
 }
 .box3 {
 	height: 150px;
-	background: url('/images/box3.jpg') center / cover; /* add media query alts for phones */
+	background: url('<%- @getImgPath("box3.jpg") %>') center / cover; /* add media query alts for phones */
 }
 .box4 {
 	height: 150px;
-	background: url('/images/box4.jpg') center / cover; /* add media query alts for phones */
+	background: url('<%- @getImgPath("box4.jpg") %>') center / cover; /* add media query alts for phones */
 }
 .box5 {
 	height: 150px;
-	background: url('/images/box5.jpg') center / cover; /* add media query alts for phones */
+	background: url('<%- @getImgPath("box5.jpg") %>') center / cover; /* add media query alts for phones */
 }
 
 /* Other Page's Table Width Adjustments */
