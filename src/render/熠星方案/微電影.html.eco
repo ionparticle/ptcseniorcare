@@ -2,6 +2,32 @@
 layout: "main"
 category: "熠星方案"
 ---
+<% youtubebox = (title, link) => %>
+	<div class="columns">
+		<div class="column">
+		</div>
+		<div class="column is-half">
+			<div class="card is-fullwidth">
+				<header class="card-header">
+					<p class="card-header-title">
+					<%- title %>
+					</p>
+				</header>
+				<div class="card-content">
+					<div class="youtube-wrap">
+						<iframe class="inline-block" width="480" height="270" src="<%- link %>" frameborder="0" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="column">
+		</div>
+	</div>
+<% end %>
+
 <div class="content">
-<h2><%= @document.basename %></h2>
+	<%= youtubebox "佳冬心長照情","https://www.youtube.com/embed/bdN6khcDjPk" %>
+	<%= youtubebox "報導 偏鄉長照人力荒","https://www.youtube.com/embed/ulyaVT6beHE" %>
+	<%= youtubebox "報導 中學納長照課","https://www.youtube.com/embed/mjVVVVml178" %>
+	<%= youtubebox "長照 融入技藝課程","https://www.youtube.com/embed/8ureeQiUW4s" %>
 </div>

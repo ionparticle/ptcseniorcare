@@ -149,3 +149,19 @@ table.impl-table-chart td.impl-chart-8 {
 table.impl-table-chart td.impl-chart-9 {
 	border: $impl-table-td-border-size solid #ab47bc;
 }
+
+/* Multimedia > Videos */
+/* 熠星方案 > 微電影 */
+.youtube-wrap {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.youtube-wrap iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}

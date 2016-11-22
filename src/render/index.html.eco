@@ -7,8 +7,10 @@ category: "首頁"
 		<% if !info.home: %>
 			<div class="column is-half-tablet is-one-third-desktop">
 				<div class="card is-fullwidth has-shadow">
+					<a href="<%- info.link %>">
 					<div class="card-image box-image <%- info.pic %>">
 					</div>
+					</a>
 					<footer class="card-footer">
 						<a href="<%- info.link %>" class="card-footer-item"><i class="fa <%- info.icon %> main-box-icon" aria-hidden="true"></i> <%- category %></a>
 					</footer>
