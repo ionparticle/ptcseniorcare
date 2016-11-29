@@ -3,5 +3,101 @@ layout: "main"
 category: "計畫緣起"
 ---
 <div class="content">
-<h2><%= @document.basename %></h2>
+	<h1><%= @document.basename %></h1>
+	<p>長照服務教育規劃實施分三階段作說明</p>
+	<table class="planning-table">
+		<tr>
+			<td></td>
+			<td class="planning-table-center"><h2>多元在地 滾動推進</h2></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td class="planning-table-1">
+				<a href="#規劃期">
+					<p>規劃期</p>
+					<ul>
+						<li>試辦</li>
+						<li>宣導</li>
+					</ul>
+				</a>
+			</td>
+			<td class="planning-table-3">
+				<a href="#發展期">
+					<p>發展期</p>
+					<ul>
+						<li>整合</li>
+						<li>深化 </li>
+					</ul>
+				</a>
+			</td>
+			<td class="planning-table-2">
+				<a href="#推廣期">
+					<p>推廣期</p>
+					<ul>
+						<li>全面</li>
+						<li>檢核</li>
+					</ul>
+				</a>
+			</td>
+		</tr>
+	</table>
+
+	<h2 id="規劃期">規劃期</h2>
+	<table class="table">
+		<tr>
+			<th>對象</th>
+			<th>目標及實施策略</th>
+		</tr>
+		<tr>
+			<td>國中8~9年級</td>
+			<td>
+				<ol>
+					<li>將長照服務教育融入國中8年級健康教育與體育學習領域及綜合活動學習領域課程。</li>
+					<li>將長照服務融入國中9年級技藝教育課程,採雙軌並行(抽離或融入或充實)制,先行規劃8所學校來試辦。</li>
+					<li>辦理教師長照服務教育專業增能研習。</li>
+				</ol>
+			</td>
+		</tr>
+	</table>
+
+	<h2 id="發展期">發展期</h2>
+	<table class="table">
+		<tr>
+			<th>對象</th>
+			<th>目標及實施策略</th>
+		</tr>
+		<tr>
+			<td>國中7~9年級</td>
+			<td>
+				<ol>
+					<li>將長照服務教育融入國中各年級健康教育與體育學習領域及綜合活動學習領域課程。</li>
+					<li>結合在地資源或機構,將長照服務全面納入國中9年級技藝教育課程,採雙軌並行(抽離或融入或充實)制。</li>
+					<li>成立屏東縣長照服務教育推動小組。</li>
+					<li>持續辦理教師增能研習,並培育長照服務教育種子教師。</li>
+				</ol>
+			</td>
+		</tr>
+	</table>
+
+	<h2 id="推廣期">推廣期</h2>
+	<table class="table">
+		<tr>
+			<th>對象</th>
+			<th>目標及實施策略</th>
+		</tr>
+		<tr>
+			<td>高中國中國小</td>
+			<td>
+				<ol>
+					<li>將長照服務教育定為本縣縣本課程(法定課程)，發展教材並全面融入高國中小各學習領域來教學。</li>
+					<li>成立長照服務教育教學輔導團,辦理教師研習及到校輔導。</li>
+					<li>辦理長照服務教育論壇,分享教學成果。</li>
+					<li>設立檢核評鑑及修正機制,以期長照服務教育能永續發展。</li>
+					<li>建置長照服務教育網路平台，提供諮詢輔導與資源運用。</li>
+					<li>高中職成立照顧服務員及長期照護相關社團及設計志工服務學習課程。</li>
+				</ol>
+			</td>
+		</tr>
+	</table>
+
 </div>

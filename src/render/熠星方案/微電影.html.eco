@@ -26,6 +26,8 @@ category: "熠星方案"
 <% end %>
 
 <div class="content">
+	<h1><%= @document.basename %></h1>
+
 	<%= youtubebox "佳冬心長照情","https://www.youtube.com/embed/bdN6khcDjPk" %>
 	<%= youtubebox "報導 偏鄉長照人力荒","https://www.youtube.com/embed/ulyaVT6beHE" %>
 	<%= youtubebox "報導 中學納長照課","https://www.youtube.com/embed/mjVVVVml178" %>

@@ -1,0 +1,449 @@
+---
+layout: "main"
+category: "課程與教學"
+---
+<div class="content">
+
+<h1>教案範例</h1>
+<ol class="num-zh">
+	<li><p class="title is-4">長期照顧服務教育課程教案設計範例</p>
+		<p class="subtitle is-5">屏東縣長期照顧服務教育課程教案設計範例</p>
+		<table class="table is-bordered">
+			<tr>
+				<th>主題概念</th>
+				<td colspan="3">失智症長者之照護</td>
+			</tr>
+			<tr>
+				<th>教案設計者</th>
+				<td colspan="3">屏東縣獅子國中黃子亭老師</td>
+			</tr>
+			<tr>
+				<th>單元名稱</th>
+				<td colspan="3">失智症之特徵與身心理變化</td>
+			</tr>
+			<tr>
+				<th>適用年級</th>
+				<td>九年級</td>
+				<th>教學時間</th>
+				<td>共三節課、135分鐘</td>
+			</tr>
+			<tr>
+				<th>教學資源</th>
+				<td colspan="3">電腦、單槍、學習單</td>
+			</tr>
+			<tr>
+				<th>教材來源</th>
+				<td colspan="3">1. 自編</td>
+			</tr>
+			<tr>
+				<th>教學目標</th>
+				<td colspan="3">
+					<p>第一節</p>
+					<p>1-1 了解失智症之症狀</p>
+					<p>1-2 認識失智症對生活及家庭的影響</p>
+					<p>第二節</p>
+					<p>2-1 了解失智症疾病之預防與治療</p>
+					<p>2-2 認識失智症之相關社福及醫療資源</p>
+					<p>第三節</p>
+					<p>3-1 學習如何照顧失智症患者</p>
+					<p>3-2 課程反思與回饋</p>
+				</td>
+			</tr>
+			<tr>
+				<th>長期照顧服務教育課程分段能力指標</th>
+				<td colspan="3">
+					<p>3-2-2</p>
+					<p>學習長者健康照顧，包含生理變化、疾病常識、飲食營養及生活需求等</p>
+					<p>3-2-3</p>
+					<p>瞭解長期照顧服務相關資源，包含網路或機構等，並具備查詢及運用的能力</p>
+					<ol>
+						<li><p>教材分析：</p>
+						<p>本課程運用多媒體教材(電腦、單槍、網路為電影)來引導學生認識失智症之特徵與身心理變化，並運用學習單作為學習之統整。</p></li>
+						<li><p>學生分析：</p>
+							<p>為國中九年級學生，於八年級已有學習過認識老化等相關課程之先備知識。</p></li>
+						<li><p>教學方法分析：</p>
+							<p>本課程採分組教學，於分組活動中使同儕能夠隨時交流心得及問題討論。並用體驗學習的方式使學生能夠更貼近失智症患者及家屬之生活。</p></li>
+						<li><p>教學資源分析：</p>
+							<p>本課程為教師自編教材，資料來源多為網路資訊並經統整編排。</p></li>
+						<li><p>統整教學分析：</p>
+							<p>本課程除長期照顧服務課程之主題外，亦融入綜合領域及健康與體育領域等相關知識及能力之培養。</p></li>
+						<li><p>概念架構圖：</p>
+							<a href="<%- @getImgPath("examples/chart1.png") %>">
+								<img src="<%- @getImgPath("examples/chart1.png") %>">
+							</a>
+						</li>
+					</ol>
+				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th>能力指標</th>
+				<th>單元目標</th>
+				<th>教學內容</th>
+			</tr>
+			<tr>
+				<td>
+					<p>3-2-2</p>
+					<p>學習長者健康照顧，包含生理變化、疾病常識、飲食營養及生活需求等</p>
+				</td>
+				<td>
+					<p>1-1</p>
+					<p>了解失智症之症狀</p>
+					<p>1-2</p>
+					<p>認識失智症對生活及家庭的影響</p>
+				</td>
+				<td>
+					<table>
+						<tr>
+							<th></th>
+							<th>時間</th>
+							<th>評量方式</th>
+						</tr>
+						<tr>
+							<td>
+								<h5>一. 準備活動</h5>
+								<p>引起動機：<a href="https://www.youtube.com/watch?v=fRijYtbAVAM">撥放微電影《失智老人》</a>
+								（講述一個家庭因女主人之母親得了失智症之後所帶來的影響。）</p>
+								<p>教師提問：請問同學在剛剛的影片當中，看到了什麼？裡面的了失智症的阿嬤有什麼症狀？（同學自由討論發言）</p>
+								<p></p>
+							</td>
+							<td>
+								10
+							</td>
+							<td>
+								能夠指出影片內所介紹之失智症的症狀
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h5>二. 發展活動</h5>
+								<p>活動一【認識失智症】</p>
+								<p>簡單說明失智症之病理，及認　
+								　識相關症狀。</p>
+								<p></p>
+							</td>
+							<td>
+								20
+							</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<h5>三. 綜合活動</h5>
+								<p>活動一【失智症的克漏字】</p>
+								<p>每組發下一張學習單，學習單上為課程中所學習過之失智症的相關知識。但於重點部分挖空，請每組討論並填下正確答案，速度最快及答案正確數最多之組別獲得小禮物。</p>
+							</td>
+							<td>
+								10
+							</td>
+							<td>
+								能分組討論並填寫出正確答案
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>教師總結：現金失智症的流行率越來越高，而更多的認識能夠使我們免於對疾病的恐懼和不安，且能夠及早發現及早治療。</p>
+								<p class="has-text-centered">～第一節 結束～</p>
+							</td>
+							<td>
+								5
+							</td>
+							<td></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+
+			<tr>
+				<td>
+					<p>3-2-3</p>
+					<p>瞭解長期照顧服務相關資源，包含網路或機構等，並具備查詢及運用的能力</p>
+				</td>
+				<td>
+					<p>2-1</p>
+					<p>了解失智症疾病之預防與治療</p>
+					<p>2-2</p>
+					<p>認識失智症之相關社福及醫療資源</p>
+				</td>
+				<td>
+					<table>
+						<tr>
+							<th></th>
+							<th>時間</th>
+							<th>評量方式</th>
+						</tr>
+						<tr>
+							<td>
+								<p>一、準備活動</p>
+								<p>1. 請同學提早到電腦教室集合上課</p>
+							</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<p>引起動機：【失智症篩檢】<p>
+								<p>2. 發下SPMSQ簡易心智狀態問卷調查表，並請同學兩人一組，互相做檢測。</p>
+
+							</td>
+							<td>10</td>
+							<td>確實檢測並填寫檢測單</td>
+						</tr>
+						<tr>
+							<td>
+								<p>3. 教師小結：失智症的治療在於早期發現早期治療，可以將這份量表帶回家給家中長輩檢測，能夠檢測家中長輩的健康狀況喔！</p>
+								<p>(資料出處：<a href="http://www.ltcpa.org.tw/public/download.html">台灣長期照護協會</a>)</p>
+
+							</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<p>二、發展活動</p>
+								<p>1. 活動一【尋找健康好幫手】</p>
+								<p>請每組同學於網路搜尋失智症患者福利及醫療等相關協助的機構，並且將機構簡介、服務對象及服務內容做成10頁以內之簡報。</p>
+								<p>2. 教師展示簡報範例供學生參考</p>
+							</td>
+							<td>20</td>
+							<td>
+								<p>搜尋正確資訊並做成簡報</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p>三、綜合活動</p>
+								<p>1. 成果報告：</p>
+								<p>請同學上台報告並分享心得。(每組3分鐘)</p>
+								<p class="has-text-centered">～第二節 結束～</p>
+							</td>
+							<td>15</td>
+							<td>報告內容詳實切題</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p>3-2-2</p>
+					<p>學習長者健康照顧，包含生理變化、疾病常識、飲食營養及生活需求等</p>
+				</td>
+				<td>
+					<p>3-1</p>
+					<p>學習如何照顧失智症患者</p>
+					<p>3-2</p>
+					<p>課程反思與回饋</p>
+				</td>
+				<td>
+					<table>
+						<tr>
+							<th></th>
+							<th>時間</th>
+							<th>評量方式</th>
+						</tr>
+						<tr>
+							<td>
+								<p>一、準備活動</p>
+							</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><p>1. 引起動機：我們於前兩節認識了許多有關失智症的知識與預防此疾病的概念。但如果有那麼一天家人或自己得了失智症，我們到底該怎麼去調適呢？</p></td>
+							<td>5</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<p>2. 教師分享自身經驗：家中親人得失智症之心路歷程。並邀請如有相關經驗之同學亦可上台分享。</p>
+							</td>
+							<td></td>
+							<td>
+								<p>專心傾聽並積極討論</p>
+							</td>
+						</tr>
+						<tr>
+							<td><p>二、發展活動</p></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><p>1. 影片欣賞【慢跑爺爺】</p></td>
+							<td>30</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>
+								<p>(影片中描述與孫女一起生活的爺爺，在發現有失智症早期症狀的時候如何與病共處，以及家人該如何照顧失智症的長者)</p>
+							</td>
+							<td></td>
+							<td>認真觀賞影片</td>
+						</tr>
+						<tr>
+							<td>2. 教師小結：照顧失智症患者需要很大的耐心與努力，這些努力都是為了要讓長輩能活得更開心、更有尊嚴。幸福是需要努力經營的，誰都不願意生病，身為家人的我們，陪伴就是最好的良藥。</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><p>三、綜合活動</p></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td><p>1. 填寫課程回饋表</p></td>
+							<td>10</td>
+							<td>確實填寫回饋表</td>
+						</tr>
+						<tr>
+							<td>
+								<p>2. 教師總結：這三堂課我們一起認識了許多有關失智症的知識。每個人都會面臨到老化，但是只要我們保持正面積極的態度，「老」其實並不可怕。</p>
+								<p class="has-text-centered">～第三節 結束～</p>
+							</td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+		<% # form download function %>
+		<% formdownload = (title, pic, download) => %>
+		<article class="media">
+			<figure class="media-left">
+				<p class="image is-96x96">
+				<a href="<%- @getImgPath(pic) %>">
+					<img src="<%- @getImgPath(pic) %>">
+				</a>
+				</p>
+			</figure>
+			<div class="media-content">
+				<div class="content">
+					<h4><%- title %></h4>
+					<a class="button is-primary" href="<%- @getPath(download) %>">
+						<span class="icon is-small icon-margin">
+							<i class="fa fa-download"></i>
+						</span>
+						下載
+					</a>
+				</div>
+			</div>
+		</article>
+		<% end %>
+
+
+		<h3>附錄一：失智症的克漏字學習單</h3>
+		<%= formdownload "失智症的克漏字","examples/失智症的克漏字.png","docs/examples/失智症的克漏字.docx" %>
+
+		<h3>附錄二：SPMSQ簡易心智狀態問卷調查表</h3>
+		<%= formdownload "簡易心智狀態問卷調查表","examples/簡易心智狀態問卷調查表.png","docs/examples/簡易心智狀態問卷調查表.docx" %>
+
+		<h3>附錄三：課程回饋表</h3>
+		<%= formdownload "失智症之特徵與身心理變化-課程回饋表","examples/課程回饋表.png","docs/examples/課程回饋表.docx" %>
+	</li>
+	<li><p class="title is-4">長期照顧服務教育課程融入其它領域教案設計範例</p>
+		<p class="subtitle is-5 has-text-centered">屏東縣長期照顧服務教育融入綜合活動領域教學活動設計</p>
+		<p class="subtitle is-5 has-text-centered">教案設計範例</p>
+		<table class="table">
+			<tr>
+				<th>學習領域</th>
+				<td>綜合活動 領域</td>
+				<th rowspan="2">長照課程
+					核心素養</th>
+				<td rowspan="2">長期照顧服務的實踐與能力</td>
+			</tr>
+			<tr>
+				<th>單元名稱</th>
+				<td>生命珍寶：關懷生命</td>
+			</tr>
+			<tr>
+				<th>適用年級</th>
+				<td>8年級</td>
+				<th rowspan="2">長照課程
+					能力指標</th>
+				<td rowspan="2"><p>3-2-2</p>
+					<p>學習長者健康照顧，包含生理變化、疾病常識、飲食營養及生活需求等</p>
+				</td>
+			</tr>
+			<tr>
+				<th>教材來源</th>
+				<td>翰林版本 第3-3單元</td>
+			</tr>
+			<tr>
+				<th>教學時間</th>
+				<td>45分</td>
+				<th rowspan="2">長照課程
+					學習目標</th>
+				<td rowspan="2">長者生理變化與疾病</td>
+			</tr>
+			<tr>
+				<th>設計者</th>
+				<td>獅子國中 黃子亭老師</td>
+			</tr>
+			<tr>
+				<th>領域能 力指標</th>
+				<td colspan="3">
+					<p>《綜合活動領域》</p>
+					<p>1-4-5</p>
+					<p>體會生命的價值，珍惜自己與他人生命，並協助他人。</p>
+				</td>
+			</tr>
+			<tr>
+				<th>實施方式</th>
+				<td colspan="3">
+					<% checkbox = (name, isChecked=false) => %>
+					<label class="checkbox icon-margin">
+						<input <%- if isChecked then "checked" else "" %> type="checkbox" disabled>
+						<%- name %>
+					</label>
+					<% end %>
+					<%= checkbox "故事引導",true %>
+					<%= checkbox "時事引導" %>
+					<%= checkbox "提問",true %>
+					<%= checkbox "學習單",true %>
+					<%= checkbox "遊戲" %>
+					<%= checkbox "角色扮演" %>
+					<%= checkbox "教學媒體",true %>
+					<%= checkbox "小組討論" %>
+					<div class="control has-addons to_middle">
+						<%= checkbox "其他" %>
+						<p class="control">
+							<input class="input" type="text" disabled>
+						</p>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<th>教學研究</th>
+				<td colspan="3">
+					<ol class="num-zh">
+						<li>教材分析：本課程透過多媒體教學（電腦、單槍、網路影片、學習單）引導學生了解生命的起源與變化，並加入長期照顧議題，使學生理解生命發展的樣態及無常，進而發展關懷及珍惜生命之情懷。</li>
+						<li>學生分析：本課程設計針對八年級學生，於綜合領域課程當中融入長期照顧議題，發展其對於長期照顧之認識，，可作為未來九年級技藝教育課程之銜接、準備。</li>
+						<li>教學方法分析：本課程採討論教學法。</li>
+						<li>教學資源分析：本課程主題為綜合活動領域－生命珍寶：關懷生命（翰林版第3-3單元），搭配教師自編教材。五、統整教學分析：以綜合活動領域課程為主，長期照顧議題為輔。</li>
+						<li><p>概念架構圖：</p>
+						</li>
+					</ol>
+				</td>
+			</tr>
+		</table>
+
+		<table class="table">
+			<tr>
+				<th>教 學 活 動 設 計</th>
+				<th>時間</th>
+				<th>教具
+					教學資源</th>
+				<th>評量
+					方式</th>
+			</tr>
+		</table>
+
+
+		<h3>附錄：學習單</h3>
+		<%= formdownload "學習單","examples/學習單.png","docs/examples/學習單.docx" %>
+	</li>
+</ol>
+</div>

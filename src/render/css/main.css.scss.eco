@@ -1,6 +1,7 @@
 /* Framework Overrides */
+$link_unvisited_color: blue;
 a {
-	color: blue;
+	color: $link_unvisited_color;
 }
 
 /* Helpers */
@@ -9,6 +10,19 @@ a {
 }
 .num-dec li {
 	list-style-type: decimal;
+}
+.to_bottom {
+	vertical-align: bottom;
+}
+.to_middle {
+	vertical-align: middle;
+}
+.icon-margin {
+	margin-right: 0.5em !important;
+}
+@mixin enable-table-border-radius($spacing: 1em) {
+	border-spacing: $spacing;
+	border-collapse: separate;
 }
 
 
@@ -111,43 +125,152 @@ $impl-table-td-border-size: 2px;
 
 table.impl-table-chart {
 	width: auto;
-	border-spacing: 1em;
-	border-collapse: separate;
+	@include enable-table-border-radius();
+	td {
+		width: $impl-table-td-width;
+		text-align: center;
+		vertical-align: middle;
+		border-radius: $impl-table-td-text-width;
+		padding: $impl-table-td-padding;
+	}
+	td.impl-chart-1 {
+		border: $impl-table-td-border-size solid #448aff;
+	}
+	td.impl-chart-2 {
+		border: $impl-table-td-border-size solid #66bb6a;
+	}
+	td.impl-chart-3 {
+		border: $impl-table-td-border-size solid #8d6e63;
+	}
+	td.impl-chart-4 {
+		border: $impl-table-td-border-size solid #ffee58;
+	}
+	td.impl-chart-5 {
+		border: $impl-table-td-border-size solid #757575;
+		background: #ffe0b2;
+	}
+	td.impl-chart-6 {
+		border: $impl-table-td-border-size solid #ff7043;
+	}
+	td.impl-chart-7 {
+		border: $impl-table-td-border-size solid #ff5252;
+	}
+	td.impl-chart-8 {
+		border: $impl-table-td-border-size solid #ec407a;
+	}
+	td.impl-chart-9 {
+		border: $impl-table-td-border-size solid #ab47bc;
+	}
 }
-table.impl-table-chart td {
-	width: $impl-table-td-width;
-	text-align: center;
-	vertical-align: middle;
-	border-radius: $impl-table-td-text-width;
-	padding: $impl-table-td-padding;
+
+.impl_form1_first_col {
+	width: 16em;
 }
-table.impl-table-chart td.impl-chart-1 {
-	border: $impl-table-td-border-size solid #448aff;
+
+table.impl_form1 {
+	@include enable-table-border-radius();
+	td {
+		border: none;
+	}
+	.impl_form1_text_cell {
+		padding: 0.7em;
+	}
+	.impl_form1_top {
+		width: 6em;
+		border: 1px solid #555555;
+		border-radius: 5em;
+	}
+	.impl_form1_to_bottom {
+		vertical-align: bottom;
+	}
+	.impl_form1_to_middle {
+		vertical-align: middle;
+	}
+	.impl_form1_arrow {
+		width: 2em;
+	}
+	.impl_form1_cell {
+		border: 1px solid #555555;
+		border-bottom-width: 1px !important;
+	}
 }
-table.impl-table-chart td.impl-chart-2 {
-	border: $impl-table-td-border-size solid #66bb6a;
+
+table.impl_form2 {
+	@include enable-table-border-radius();
+
+	.impl_form2_text {
+		padding: 0.5em;
+		width: 10%;
+		border-radius: 5px;
+		border: 3px solid #83D4FF;
+		vertical-align: middle;
+	}
+	.impl_form2_top_arrow {
+		vertical-align: middle;
+		color: orange;
+	}
+	.impl_form2_bot_arrow {
+		color: #4CD13E;
+		height: 3.5em;
+	}
+	.impl_form2_bot_label {
+		color: #308527;
+	}
 }
-table.impl-table-chart td.impl-chart-3 {
-	border: $impl-table-td-border-size solid #8d6e63;
+
+.impl_form3_green {
+	background: #BFFFBC;
 }
-table.impl-table-chart td.impl-chart-4 {
-	border: $impl-table-td-border-size solid #ffee58;
+.impl_form3_orange {
+	background: #FFCDB1;
 }
-table.impl-table-chart td.impl-chart-5 {
-	border: $impl-table-td-border-size solid #757575;
-	background: #ffe0b2;
+.impl_form3_yellow {
+	background: #FFFDB4;
 }
-table.impl-table-chart td.impl-chart-6 {
-	border: $impl-table-td-border-size solid #ff7043;
+
+$impl_venn_mid_width: 4em;
+$impl_venn_dia: $impl_venn_mid_width*3;
+.impl_venn_wrap {
+	min-height: $impl_venn_dia;
+	margin-bottom: 1em;
 }
-table.impl-table-chart td.impl-chart-7 {
-	border: $impl-table-td-border-size solid #ff5252;
-}
-table.impl-table-chart td.impl-chart-8 {
-	border: $impl-table-td-border-size solid #ec407a;
-}
-table.impl-table-chart td.impl-chart-9 {
-	border: $impl-table-td-border-size solid #ab47bc;
+#impl_venn {
+	div {
+		height: $impl_venn_dia;
+		width: $impl_venn_dia;
+		border-radius: $impl_venn_dia / 2;
+		border: 1px solid #000;
+		display: table;
+		float: left;
+		opacity: .6;
+	}
+	div:nth-child(1) {
+		padding-top: $impl_venn_dia / 2 - 1em;
+		background-color: #FF0000;
+		color: #FFF;
+		padding-right: $impl_venn_mid_width;
+		padding-left: 1.5em;
+	}
+	div:nth-child(2) {
+		padding: 1em;
+		padding-top: $impl_venn_dia / 2 - 1em;
+		background-color: #0000FF;
+		color: #FFF;
+		margin-left: -$impl_venn_mid_width;
+		padding-left: $impl_venn_mid_width + 1em;
+	}
+	#impl_overlap {
+		border: 0;
+		height: $impl_venn_mid_width / 2;
+		width: $impl_venn_mid_width / 2;
+		left: -$impl_venn_dia + 1em;
+		top: $impl_venn_dia / 2 - 2em;
+		color: #ccc;
+		position: relative;
+		text-align: center;
+		z-index: 10;
+		opacity: 1;
+	}
 }
 
 /* Multimedia > Videos */
@@ -164,4 +287,58 @@ table.impl-table-chart td.impl-chart-9 {
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+
+/* Multimedia > Ebooks */
+/* 熠星方案 > 電子書 */
+.ebook_list {
+	li {
+		list-style: none;
+		padding-bottom: 1em;
+	}
+}
+
+/* About > Planning */
+/* 計畫緣起 > 策略規劃 */
+$planning_table_radius: 5em;
+.planning-table {
+	@include enable-table-border-radius();
+	width: auto;
+
+	h2, p, li {
+		list-style: none;
+		text-align: center;
+	}
+	p {
+		font-size: 1.5em;
+		margin-bottom: 0.2em !important;
+	}
+	ul, h2 {
+		margin: 0.2em;
+	}
+	td {
+		vertical-align: middle;
+		padding-top: 0.5em;
+		padding-bottom: 0.5em;
+		width: 8em;
+	}
+	td.planning-table-center {
+		border: 1px solid #555555;
+		background: #eeeeee;
+	}
+	td.planning-table-1 {
+		border: 1px solid green;
+		background: #B7FFB6;
+		border-radius: $planning_table_radius;
+	}
+	td.planning-table-2 {
+		border: 1px solid #7751FF;
+		background: #D7CFFF;
+		border-radius: $planning_table_radius;
+	}
+	td.planning-table-3 {
+		border: 1px solid #FF8618;
+		background: #FFE0D1;
+		border-radius: $planning_table_radius;
+	}
 }

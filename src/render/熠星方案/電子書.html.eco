@@ -2,6 +2,28 @@
 layout: "main"
 category: "熠星方案"
 ---
+<% ebookbox = (title, view, download) => %>
+<div class="card has-text-centered">
+	<div class="card-content">
+		<div class="content">
+			<p class="title is-5 has-text-centered"><i class="fa fa-book is-pulled-left" aria-hidden="true"></i> <%- title %></p>
+		</div>
+	</div>
+	<footer class="card-footer">
+		<a class="card-footer-item" href="<%- view %>">現看</a>
+		<a class="card-footer-item" href="<%- @getPath(download) %>">下載</a>
+	</footer>
+</div>
+<% end %>
+
 <div class="content">
-<h2><%= @document.basename %></h2>
+	<h1><%= @document.basename %></h1>
+	<ul class="ebook_list">
+		<li>
+			<%= ebookbox "教學指引","http://ebook.aeweb.com.tw/ebook/Pingtung/006/021/index.html","ebooks/教學指引.pdf" %>
+		</li>
+		<li>
+			<%= ebookbox "第八屆台灣健康城市暨高齡友善城市獎項得獎作品","http://ebook.aeweb.com.tw/ebook/Pingtung/006/022/index.html","ebooks/第八屆台灣健康城市暨高齡友善城市獎項得獎作品.pdf" %>
+		</li>
+	</ul>
 </div>
