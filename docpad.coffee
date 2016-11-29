@@ -7,7 +7,7 @@
 # switching between the two.
 
 rooturl = "/" # Development Value
-#rootlurl = "/seniorcare/" # Production Value
+#rooturl = "/seniorcare/" # Production Value
 
 typeLink = "Link"
 typeCSS = "CSS"
