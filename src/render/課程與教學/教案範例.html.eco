@@ -314,9 +314,12 @@ category: "課程與教學"
 		<article class="media">
 			<figure class="media-left">
 				<p class="image is-96x96">
-				<a href="<%- @getImgPath(pic) %>">
-					<img src="<%- @getImgPath(pic) %>">
-				</a>
+					<a href="<%- @getImgPath(pic) %>">
+						<img src="<%- @getImgPath(pic) %>">
+						<span class="icon is-pulled-left is-overlay">
+							<i class="fa fa-search-plus"></i>
+						</span>
+					</a>
 				</p>
 			</figure>
 			<div class="media-content">
