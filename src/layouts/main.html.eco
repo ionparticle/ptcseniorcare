@@ -18,7 +18,7 @@
 	<%- @getBlock("styles").add([@getCssPath("main.css")]).toHTML() %>
 </head>
 <body>
-	<section class="hero is-primary home-hero">
+	<section class="hero is-primary home-hero" id="top">
 		<div class="hero-head">
 			<div class="container">
 				<nav class="nav">
@@ -99,5 +99,12 @@
 			<%- @content %>
 		</div>
 	</section>
+
+	<!-- FOOTER -->
+	<footer class="footer">
+		<div class="container">
+			<a style="border-bottom: 1px solid #3273dc;" class="button is-outlined is-info is-pulled-right" href="#top"><span class="icon is-small icon-margin"><i class="fa fa-chevron-up"></i></span>回到頁首</a>
+		</div>
+	</footer>
 </body>
 </html>
