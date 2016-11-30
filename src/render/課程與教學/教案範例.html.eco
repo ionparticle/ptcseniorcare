@@ -423,8 +423,6 @@ category: "課程與教學"
 						<li>學生分析：本課程設計針對八年級學生，於綜合領域課程當中融入長期照顧議題，發展其對於長期照顧之認識，，可作為未來九年級技藝教育課程之銜接、準備。</li>
 						<li>教學方法分析：本課程採討論教學法。</li>
 						<li>教學資源分析：本課程主題為綜合活動領域－生命珍寶：關懷生命（翰林版第3-3單元），搭配教師自編教材。五、統整教學分析：以綜合活動領域課程為主，長期照顧議題為輔。</li>
-						<li><p>概念架構圖：</p>
-						</li>
 					</ol>
 				</td>
 			</tr>
@@ -433,14 +431,121 @@ category: "課程與教學"
 		<table class="table">
 			<tr>
 				<th>教 學 活 動 設 計</th>
-				<th>時間</th>
-				<th>教具
-					教學資源</th>
-				<th>評量
-					方式</th>
+			</tr>
+			<tr>
+				<td><table class="teaching_example_table1">
+					<tr>
+						<th></th>
+						<th><p class="title is-5">時間</p></th>
+						<th><p class="title is-5 has-text-centered">教具</p>
+							<p class="subtitle is-6 has-text-centered">教學資源</p></th>
+						<th><p class="title is-5 has-text-centered">評量</p>
+							<p class="subtitle is-6 has-text-centered">方式</p></th>
+					</tr>
+					<tr>
+						<td><h5 class="has-text-centered">一、準備活動</h5></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td><p>1. 活動一：播放精彩過一生繪本PPT</p>
+							<p>教師提問：在這繪本裡面你看到了哪些人？繪本中的爺爺奶奶，他們在人生做了哪些事？</p></td>
+						<td>5</td>
+						<td>電腦、單槍、精彩過一生(繪本ppt)</td>
+						<td>能夠專心聆聽並理解故事內容</td>
+					</tr>
+					<tr>
+						<td><h5 class="has-text-centered top_margin_1em">二、發展活動</h5></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td><p>1. 活動一：生命的刻度</p>
+							<p>每位同學發下一張紙條及活動學習單，紙條上有1到100的刻度，請同學依照以下步驟進行活動。</p></td>
+						<td></td>
+						<td><p>學習單 膠水</p></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<ul>
+								<li>步驟一：先請同學在屬於自己歲數的刻度上畫下一直線，並將該刻度前剩餘的紙條撕下。</li>
+								<li>步驟二：接下來想像自己可能活到的歲數，也請在刻度上畫下直線，並將刻度之後剩餘的紙條撕下。</li>
+								<li>步驟三：剩下的紙條就代表著你在這個世界上可能剩餘的時光，將其貼在活動學習單上。</li>
+							</ul>
+						</td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td><p class="top_margin_05em">2. 教師提問</p></td>
+						<td>10</td>
+						<td></td>
+						<td>完成一至三步驟</td>
+					</tr>
+					<tr>
+						<td><p>剩下的時光還有多少時間呢？在這些剩下的時間裡面，你有沒有什麼事情是你非做不可的呢？請好好的思考一下，並寫在學習單上。</p></td>
+						<td>10</td>
+						<td>彩色筆</td>
+						<td>完成學習單內容之填寫</td>
+					</tr>
+					<tr>
+						<td>
+							<p>3. 活動二：一起來認識老！</p>
+							<p>播放遠見雜誌影片：<a href="https://www.youtube.com/watch?v=Thiaxy9o9PA">什麼是老？</a></p>
+						</td>
+						<td></td>
+						<td>電腦、單槍、網路影片</td>
+						<td>專心觀看影片</td>
+					</tr>
+					<tr>
+						<td>
+							<p class="top_margin_05em">4. 教師引導：</p>
+							<p>老了之後真的很不一樣，包括你的容貌、身體機能及生活作息都會不一樣。你會變得容易生病及需要別人幫助，這會是一個很不簡單的過程。所以我們如果能夠及早認識老，我們就比較容易了解怎麼照顧老年生活的自己，以及我們身邊的長輩。對於台灣這個已邁入高齡社會的國家來說，是非常重要且每一個人都必須有的認知。</p>
+						</td>
+						<td>5</td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>
+							<p class="top_margin_05em">5. 教師簡單介紹幾種長者較容易罹患的疾病，以及較簡易的保養及照顧方式。參考資料： <a href="http://www.nhi.gov.tw/webdata/webdata.aspx?menu=6&menu_id=168&webdata_id=1421">衛生福利部中央健康保險署網站文章－銀髮族十大減康危機</a></p>
+						</td>
+						<td>10</td>
+						<td>電腦、單槍</td>
+						<td>對於老人疾病及保養有初步的認識</td>
+					</tr>
+					<tr>
+						<td><h5 class="has-text-centered top_margin_1em">三、綜合活動</h5></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>1. 心得分享：邀請一位同學上台分享自己學習單內的內容。</td>
+						<td></td>
+						<td>獎勵品</td>
+						<td>主動發表及分享</td>
+					</tr>
+					<tr>
+						<td><p>2.	綜合討論-</p>
+							<p>生命的可貴在於他的無常，我們誰都無法永遠保持在同樣一個狀態，我們可能會變老、也可能會生病，而這都是生命必經的過程。但只要我們能夠用健康的心去看待他，珍惜生命也珍惜身邊的人，相信不管你是什麼年紀，一定都可以活出最精采的人生。</p></td>
+						<td>5</td>
+						<td></td>
+						<td></td>
+					</tr>
+				</table></td>
+			</tr>
+			<tr>
+				<td>
+					<p>教學省思：</p>
+					<p>本堂課為綜合領域課程融入長期照顧議題，可於課程中給予學生更多的討論及思考的空間，讓學生對於生命及老化的議題能有更多的覺察與體驗。</p>
+				</td>
 			</tr>
 		</table>
-
 
 		<h3>附錄：學習單</h3>
 		<%= formdownload "學習單","examples/學習單.png","docs/examples/學習單.docx" %>

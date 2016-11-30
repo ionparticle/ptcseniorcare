@@ -5,10 +5,10 @@ a {
 }
 
 /* Helpers */
-.num-zh li {
+ul.num-zh li {
 	list-style-type: cjk-ideographic;
 }
-.num-dec li {
+ul.num-dec li {
 	list-style-type: decimal;
 }
 .to_bottom {
@@ -19,6 +19,12 @@ a {
 }
 .icon-margin {
 	margin-right: 0.5em !important;
+}
+.top_margin_1em {
+	margin-top: 1em;
+}
+.top_margin_05em {
+	margin-top: 0.5em;
 }
 @mixin enable-table-border-radius($spacing: 1em) {
 	border-spacing: $spacing;
@@ -270,6 +276,14 @@ $impl_venn_dia: $impl_venn_mid_width*3;
 		text-align: center;
 		z-index: 10;
 		opacity: 1;
+	}
+}
+/* Teaching > Examples */
+/* 課程與教學 > 教案範例 */
+table.teaching_example_table1 {
+	th, td {
+		padding-left: 0.5em;
+		padding-right: 0.5em;
 	}
 }
 
