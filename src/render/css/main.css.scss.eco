@@ -11,6 +11,9 @@ ul.num-zh li {
 ul.num-dec li {
 	list-style-type: decimal;
 }
+ul.num-none li {
+	list-style: none;
+}
 .to_bottom {
 	vertical-align: bottom;
 }
@@ -61,6 +64,9 @@ ul.num-dec li {
 }
 .main-box-icon {
 	margin-right: 0.5em;
+}
+ul.footer_pages {
+	margin-left: 0;
 }
 
 /* Home Page */

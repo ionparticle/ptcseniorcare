@@ -102,8 +102,23 @@
 
 	<!-- FOOTER -->
 	<footer class="footer">
-		<div class="container">
-			<a style="border-bottom: 1px solid #3273dc;" class="button is-outlined is-info is-pulled-right" href="#top"><span class="icon is-small icon-margin"><i class="fa fa-chevron-up"></i></span>回到頁首</a>
+		<div class="columns">
+			<div class="container column">
+				<a style="border-bottom: 1px solid #3273dc;" class="button is-outlined is-info is-pulled-right" href="#top"><span class="icon is-small icon-margin"><i class="fa fa-chevron-up"></i></span>回到頁首</a>
+			</div>
+		</div>
+
+		<div class="columns is-multiline content top_margin_1em">
+		<% for category,info of @site.categories: %>
+			<div class="column is-2">
+				<h4><a href="<%- info.link %>"><%- category %></a></h4>
+				<ul class="num-none footer_pages">
+				<% for page of info.pages: %>
+					<li><a href="<%- @getPath(category + "/" + info.pages[page] + ".html") %>"><%- info.pages[page] %></a></li>
+				<% end %>
+				</ul>
+			</div>
+		<% end %>
 		</div>
 	</footer>
 </body>
