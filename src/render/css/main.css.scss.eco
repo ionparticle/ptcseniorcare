@@ -386,3 +386,15 @@ $planning_table_radius: 5em;
 .resources_movies_length {
 	width: 7.5em;
 }
+
+/* 長照相關連結 > 書籍繪本 */
+/* Resources > Books */
+.resources_books_publisher {
+	width: 5.5em;
+}
+.resources_books_keywords {
+	width: 6.5em;
+}
+.resources_books_cover {
+	width: 120px;
+}

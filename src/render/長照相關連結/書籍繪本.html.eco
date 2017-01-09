@@ -1,0 +1,48 @@
+---
+layout: "main"
+category: "長照相關連結"
+---
+<% bookrow = (title,keywords,summary,publisher,poster,link) => %>
+	<tr>
+		<td><img src="<%- poster %>"></td>
+		<td>
+			<h5><a href="<%- link %>"><%- title %></a></h5>
+		</td>
+		<td><%- keywords %></td>
+		<td><%- summary %></td>
+		<td><%- publisher %></td>
+	</tr>
+<% end %>
+
+<div class="content">
+	<h1>書籍繪本</h1>
+	<table class="table table-hover is-narrow">
+		<tr>
+			<th class="resources_books_cover"></th>
+			<th class="resources_movies_title">書籍名稱</th>
+			<th class="resources_books_keywords">關鍵字</th>
+			<th>內容摘要</th>
+			<th class="resources_books_publisher">出版社</th>
+		</tr>
+		<%= bookrow "奶奶最棒！爺爺最棒！","互動、關懷","奶奶會做好多事，像是和孫子一起畫圖、去野餐，但奶奶做什麼最棒呢？爺爺會做好多事，像是玩捉迷藏、用沙子建座城堡，但爺爺做什麼最棒呢？","小魯文化",@getImgPath("books/grandparentsarethebest.jpg"),"http://www.books.com.tw/products/0010460007" %>
+		<%= bookrow "我的奶奶不一樣","失智症","小男孩說著別人家的奶奶會做好多事，只有他的奶奶什麼都不會。而他所謂那個跟別人很不一樣的奶奶，原來是患了「老年失智症」。","大穎文化",@getImgPath("books/mygransdifferent.jpg"),"http://www.books.com.tw/products/0010322352" %>
+		<%= bookrow "阿嬤的大眠床","互動","妹仔有個不擅表達情感的阿嬤，妹仔常是嫌她嘮叨、多慮，惹得阿嬤傷心。其實妹仔不懂，阿嬤只是用著憨直的方式愛她，她在阿嬤滿滿的愛中成長茁壯。","格林",@getImgPath("books/grandmasbigbed.jpg"),"http://www.books.com.tw/products/0010425246" %>
+		<%= bookrow "老爺爺學認字","老人夢想","米爺爺會做好多好多的事，可是他不識字。米爺爺努力不懈讓自己學習充滿樂趣，也感動米奶奶開始想要學認字。","三之三",@getImgPath("books/jeremiahlearnstoread.jpg"),"http://www.books.com.tw/products/0010149818" %>
+		<%= bookrow "威威找記憶","關懷、失智症","小男孩威威是老太太南西的好朋友，他幫助她找回失去的記憶。威威關心這些老人、認識每個人的獨特性，也知道如何以不同的方式跟他們相處。","三之三",@getImgPath("books/memory.jpg"),"http://www.eslite.com/product.aspx?pgid=1003116201218691" %>
+		<%= bookrow "精彩過一生","生命歷程","孫子孫女問爺爺奶奶為什麼頭禿禿的，皮膚皺巴巴的，爺爺奶奶於是細說從頭，他們的一生是實實在在的活過了，如今可以坦然面對死亡。","三之三",@getImgPath("books/onelife.jpg"),"http://www.books.com.tw/products/0010088406" %>
+		<%= bookrow "艾瑪畫畫","老人夢想","艾瑪奶奶要過72歲生日了，雖然子孫滿堂，日子也沒有什麼煩憂，但心中一直有股未完成的心願…","三之三",@getImgPath("books/painting.jpg"),"http://www.books.com.tw/products/0010141334" %>
+		<%= bookrow "但願我是人偶","關懷、孤單","老人喜歡注視著街上的活動，他向鄰居打招呼，但鄰居卻從來也不看他一眼；他望著對面房子，電視螢幕照亮了客廳。他搖著頭對著他已往生的太太說：「但願我是電視機裡的人偶，那麼至少他們會看見我。」","三之三",@getImgPath("books/puppet.jpg"),"http://www.books.com.tw/products/0010231162" %>
+		<%= bookrow "叔公的理髮店","老人夢想","這是一本描述老叔公如何在有限制的環境中努力，來實踐開一間屬於自己理髮店的夢想。","三之三",@getImgPath("books/barbers.jpg"),"http://www.books.com.tw/products/0010176770" %>
+		<%= bookrow "湯姆爺爺","關懷、養老院","鎮上蓋了一間豪華養老院，規定所有老人都要進去。雖然院中什麼都有，但是爺爺奶奶們的笑容卻越來越少…本書點出現代家庭可能面臨的危機。","上誼",@getImgPath("books/tomgrandpa.jpg"),"http://reading.dils.tku.edu.tw/index.php/%E6%B9%AF%E5%A7%86%E7%88%BA%E7%88%BA" %>
+		<%= bookrow "爺爺一定有辦法","互動","約瑟從小就和爺爺建立起深厚的情感，他相信爺爺一定有辦法把舊東西變成新的東西。","上誼",@getImgPath("books/grandpahasaway.jpg"),"https://www.parenting.com.tw/reading/book-35-%E7%88%BA%E7%88%BA%E4%B8%80%E5%AE%9A%E6%9C%89%E8%BE%A6%E6%B3%95/" %>
+		<%= bookrow "跟著爺爺看","喪失視力","爺爺因年老而喪失視力，眼睛雖然看不見，卻可以借助其他感官，和孫子分享他歷經歲月洗禮的生命經驗。","遠流",@getImgPath("books/throughgrandpaseyes.jpg"),"http://reading.dils.tku.edu.tw/index.php/%E8%B7%9F%E8%91%97%E7%88%BA%E7%88%BA%E7%9C%8B" %>
+		<%= bookrow "叔公忘記了","關懷、失智症","叔公忘記了好多事，他忘了家人名字；忘了現在是夏天；忘了自己沒有戴帽子，但是他依舊記得小時候，家門前茂盛的紫藤樹遮蔽了大門，有一隻叫戴芬妮的小狗…","遠流",@getImgPath("books/iliketobelittle.jpg"),"http://www.books.com.tw/products/0010164551" %>
+		<%= bookrow "我最喜歡爺爺","關懷孤單","奶奶死後，爺爺獨自從鄉下搬到城市和子女一起住。只是爺爺的習慣，吸引著孫子好奇的眼光。小男孩從害怕爺爺，到試著學習瞭解與接納爺爺。","漢聲",@getImgPath("books/myfavgrandpa.jpg"),"http://reading.dils.tku.edu.tw/index.php/%E6%88%91%E6%9C%80%E5%96%9C%E6%AD%A1%E7%88%BA%E7%88%BA" %>
+		<%= bookrow "先左腳，再右腳","互動、中風","描述爺孫相處情形：爺爺教小包學走路，後來，爺爺中風了，出院後小包決定要幫助爺爺康復過來。","漢聲",@getImgPath("books/nowonefootnowother.jpg"),"http://reading.dils.tku.edu.tw/index.php/%E5%85%88%E5%B7%A6%E8%85%B3%EF%BC%8C%E5%86%8D%E5%8F%B3%E8%85%B3" %>
+		<%= bookrow "老人與狗","關懷、遊民、讀獨居老人","有一個無家可歸的老人。人們看著老人背影漸漸遠去，但他並不孤單。有一隻小狗，正一步步踩著老人留下的腳印，緊緊跟隨在他的後面。","和英",@getImgPath("books/silentnight.jpg"),"http://www.books.com.tw/products/0010178536" %>
+		<%= bookrow "再見，愛瑪奶奶","關懷、死亡","有一天，愛瑪奶奶說：「我的生命，大概只剩下一年，不開始準備不行了。」愛瑪奶奶照自己的方式活到最後。","和英",@getImgPath("books/goodbyegrandma.jpg"),"http://www.books.com.tw/products/0010193411" %>
+		<%= bookrow "陽光之家","養老院、行動不便","外婆跌倒受傷無法走路，已住在「陽光之家」五個星期。提姆第一次到老人院探訪外婆。當探訪接近尾聲，提姆開始明白：原來互相體貼對方的親人，都擔心會讓對方心中更難過，而勉強克制自己的思念之情……","和英",@getImgPath("books/sunshinehome.jpg"),"http://reading.dils.tku.edu.tw/index.php/%E9%99%BD%E5%85%89%E4%B9%8B%E5%AE%B6" %>
+		<%= bookrow "艾瑪與艾度爺爺","關懷、失智","艾瑪和艾度爺爺一起去他們小時候去過的地方，也玩了他們以前玩的遊戲，艾瑪認為艾度爺爺記性還是很好，沒有忘記過去，而艾度爺爺很感動艾瑪來探望他，艾度爺爺說：「最棒的是，你記得來看我。","和英",@getImgPath("books/elmerandgrandpaeldo.jpg"),"http://www.books.com.tw/products/0010641637" %>
+		<%= bookrow "樓上的外婆和樓下的外婆","互動、死亡","湯米有「兩個」外婆。事實上，住樓上的是他的曾外婆，每星期湯米都會去探望樓上和樓下的外婆。湯米從和兩個外婆的相處中，慢慢認識到人生中「老」和「死」。","台灣麥克",@getImgPath("books/grandmaupanddownstairs.jpg"),"http://reading.dils.tku.edu.tw/index.php/%E6%A8%93%E4%B8%8A%E7%9A%84%E5%A4%96%E5%A9%86%E5%92%8C%E6%A8%93%E4%B8%8B%E7%9A%84%E5%A4%96%E5%A9%86401031116" %>
+	</table>
+</div>
