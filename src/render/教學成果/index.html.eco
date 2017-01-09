@@ -4,23 +4,24 @@ isCategory: true
 category: "教學成果"
 ---
 <% imagebox = (image, caption) => %>
-<div class="columns">
-	<div class="column"></div>
-	<div class="column is-half">
-		<div class="card is-fullwidth">
-			<div class="card-image">
-				<figure class="image is-4by3">
+<div class="column is-2-desktop is-one-quarter-tablet is-half-mobile">
+	<div class="card is-fullwidth">
+		<div class="card-image">
+			<figure class="image is-4by3 enlarge_icon">
+				<a href="<%- @getImgPath(image) %>">
 					<img src="<%- @getImgPath(image) %>" alt="">
-				</figure>
-			</div>
-			<div class="card-content">
-				<div class="content has-text-centered">
-					<p><%- caption %></p>
-				</div>
+					<span class="icon is-pulled-left is-overlay">
+						<i class="fa fa-search-plus"></i>
+					</span>
+				</a>
+			</figure>
+		</div>
+		<div class="card-content results-pic">
+			<div class="content has-text-centered">
+				<p><%- caption %></p>
 			</div>
 		</div>
 	</div>
-	<div class="column"></div>
 </div>
 <% end %>
 
@@ -28,6 +29,7 @@ category: "教學成果"
 	<h1>屏東縣推動長期照顧服務融入國中教育課程之成果</h1>
 	<ol>
 		<li><h4>長期照顧服務的知識與概念</h4>
+			<div class="columns is-multiline is-mobile">
 			<%= imagebox "results/01.jpg","課程主題：關於老、老人及老年生活之概念" %>
 			<%= imagebox "results/02.jpg","課程主題：老年生活之生理轉變及照顧需求" %>
 			<%= imagebox "results/03.jpg","課程主題：我們的VuVu，我們的寶" %>
@@ -36,8 +38,10 @@ category: "教學成果"
 			<%= imagebox "results/06.jpg","課程主題：銀髮產業面面觀" %>
 			<%= imagebox "results/07.jpg","課程主題：社區長期照顧服務之機構、內容與現況說明" %>
 			<%= imagebox "results/08.jpg","課程主題：機構內長期照顧服務志工基本養成訓練" %>
+			</div>
 		</li>
-		<li><h4>長期照顧服務的態度與興趣</h4>
+		<li><h4 class="top_margin_1em">長期照顧服務的態度與興趣</h4>
+			<div class="columns is-multiline is-mobile">
 			<%= imagebox "results/09.jpg","課程主題：陪伴老人做健康操" %>
 			<%= imagebox "results/10.jpg","課程主題：陪老人聊天及按摩活動" %>
 			<%= imagebox "results/11.jpg","課程主題：老人健康及生理狀況測量" %>
@@ -50,8 +54,10 @@ category: "教學成果"
 			<%= imagebox "results/18.jpg","課程名稱：志工訓練—母語宣導技巧" %>
 			<%= imagebox "results/19.jpg","課程名稱：老人桌遊活動介紹及應用" %>
 			<%= imagebox "results/20.jpg","課程主題：社區康樂活動同樂及才藝表演" %>
+			</div>
 		</li>
-		<li><h4>長期照顧服務的實踐與能力</h4>
+		<li><h4 class="top_margin_1em">長期照顧服務的實踐與能力</h4>
+			<div class="columns is-multiline is-mobile">
 			<%= imagebox "results/21.jpg","課程主題：長期照顧納入國中技藝教育" %>
 			<%= imagebox "results/22.jpg","課程主題：老人飲食營養與健康" %>
 			<%= imagebox "results/23.jpg","課程主題：老人午餐之烹飪課程" %>
@@ -60,8 +66,10 @@ category: "教學成果"
 			<%= imagebox "results/26.jpg","課程主題：農藝活動與長照服務" %>
 			<%= imagebox "results/27.jpg","課程主題：老人營養需求及小點心製作活動" %>
 			<%= imagebox "results/28.jpg","課程主題：長照服務與園藝治療" %>
+			</div>
 		</li>
-		<li><h4>長期照顧服務的延伸與推廣</h4>
+		<li><h4 class="top_margin_1em">長期照顧服務的延伸與推廣</h4>
+			<div class="columns is-multiline is-mobile">
 			<%= imagebox "results/29.jpg","課程主題：社區長照機構古謠傳承與表演活動" %>
 			<%= imagebox "results/30.jpg","課程主題：地區學校策略聯盟儀式" %>
 			<%= imagebox "results/31.jpg","課程主題：社區長照服務機構交流與分享" %>
@@ -72,6 +80,7 @@ category: "教學成果"
 			<%= imagebox "results/36.jpg","課程主題：端午節之包粽子同樂活動" %>
 			<%= imagebox "results/37.jpg","課程主題：社區老人休閒文康車同樂活動" %>
 			<%= imagebox "results/38.jpg","課程主題：長照服務課程省思與分享" %>
+			</div>
 		</li>
 	</ol>
 </div>

@@ -29,6 +29,20 @@ ul.num-none li {
 .top_margin_05em {
 	margin-top: 0.5em;
 }
+.enlarge_icon {
+}
+.enlarge_icon {
+	.icon {
+		display: none;
+	}
+	&:hover {
+		.icon {
+			display: inline;
+			background-color: rgba(255, 255, 255, 0.5);
+			color: blue;
+		}
+	}
+}
 @mixin enable-table-border-radius($spacing: 1em) {
 	border-spacing: $spacing;
 	border-collapse: separate;
@@ -362,3 +376,6 @@ $planning_table_radius: 5em;
 		border-radius: $planning_table_radius;
 	}
 }
+
+/* 課程之成果 */
+/* Results */

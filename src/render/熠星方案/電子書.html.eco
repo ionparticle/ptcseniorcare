@@ -10,7 +10,7 @@ category: "熠星方案"
 		</div>
 	</div>
 	<footer class="card-footer">
-		<a class="card-footer-item" href="<%- view %>">現看</a>
+		<a class="card-footer-item" href="<%- view %>">線上觀看</a>
 		<a class="card-footer-item" href="<%- @getPath(download) %>">下載</a>
 	</footer>
 </div>
