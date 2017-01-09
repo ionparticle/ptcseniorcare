@@ -1,0 +1,33 @@
+---
+layout: "main"
+category: "長照相關連結"
+---
+<% movierow = (title,summary,length,poster,link) => %>
+	<tr>
+		<td>
+			<h5><a href="<%- link %>"><%- title %></a></h5>
+			<img src="<%- poster %>">
+		</td>
+		<td>
+			<%- summary %>
+		</td>
+		<td><%- length %></td>
+	</tr>
+<% end %>
+
+<div class="content">
+	<h1>影片資源</h1>
+	<table class="table table-hover">
+		<tr>
+			<th class="resources_movies_title">影片名稱</th>
+			<th>說明</th>
+			<th class="resources_movies_length">備註</th>
+		</tr>
+		<%= movierow "被遺忘的時光","這部將鏡頭瞄準社會上慣常受到冷落的失智老人為主題的紀錄片，環繞幾個家中有失智老人的家庭，以細膩鏡頭，記錄現今社會鮮為人知的角落。其中，小潔的失智母親景珍，屢屢在清明掃墓的時候，忘了墓碑上的名字，之於自己的意義…。","片長107分鐘",@getImgPath("movies/longgoodbye.jpg"),"https://tw.movies.yahoo.com/movieinfo_main.html/id=3675" %>
+		<%= movierow "記得我愛你","敘述年輕的女主角遺傳了母親的慢性失憶症，記憶、語言和現實都一點一滴離她遠去。她被送到復健中心「松鼠療養院」治療，她遇見了菲利普，一個慢慢失去記憶的女人和另一個慢慢找回記憶的男人之間，發展出醫學治療和愛情追求的兩難抉擇。","片長110分鐘",@getImgPath("movies/beautifulmemories.jpg"),"http://app2.atmovies.com.tw/film/fsen50259440/" %>
+		<%= movierow "不老騎士：歐兜邁環台日記","2007年11月13日，在弘道老人福利基金會的推動下，17位平均81歲的長者，開始了為期13天的騎摩托車環島壯舉，他們從台中出發，一路往南行經台南、高雄、屏東、台東、花蓮、宜蘭、台北，再回到台中，總路程長達1178公里！17位長者中，有兩位曾罹患癌症，四位需帶助聽器，五位患有高血壓，途中歷經險峻的蘇花公路，歷經團長三進三出醫院，但他們一一克服困難，用無懼的心、熱血的行動，完成了這個在外人眼中「不可能的夢想」。希望藉此鼓舞更多人：追求夢想，永不嫌晚！","片長107分鐘",@getImgPath("movies/gograndriders.jpg"),"https://zh.wikipedia.org/wiki/%E4%B8%8D%E8%80%81%E9%A8%8E%E5%A3%AB-%E6%AD%90%E5%85%9C%E9%82%81%E7%92%B0%E5%8F%B0%E6%97%A5%E8%A8%98" %>
+		<%= movierow "一路玩到掛","<p>歷經婚姻、生兒育女、各種責任義務及46年的黑手工作的卡特，和億萬富翁艾德華柯爾，因緣際會住進同一間病房，他們開始有許多時間思考接下來的人生，以及他們到底擁有什麼。雖然他們兩人的背景截然不同，但是他們很快就發現他們具有兩個共通點：第一點，他們都不瞭解自己，也不確定自己的人生抉擇是否正確；第二點，他們都希望好好利用人生的最後時光，完成一直想做卻沒做的事。</p><p>有時，人生就是須要一個期限，使我們產生動力扭轉自己的人生。</p>","片長110分鐘",@getImgPath("movies/bucketlist.jpg"),"https://zh.wikipedia.org/wiki/%E4%B8%80%E8%B7%AF%E7%8E%A9%E5%88%B0%E6%8E%9B" %>
+		<%= movierow "金盞花大酒店","<p>一群身經百戰退休的英國歐吉桑跟歐巴桑，來自不同的背景，為了讓人生獲得新體驗，決定前往極具異國風味的神秘印度旅遊。他們來到“金盞花大酒店”落腳。 當他們千里迢迢來到夢想中的金盞花大酒店，才發現這家酒店根本是個資金短缺岌岌可危的老飯店，美麗的幻夢頓時破滅。</p><p>這趟旅程將徹底的改變這七位旅人的生命，找到亮麗開懷的新人生！</p>","片長124分鐘",@getImgPath("movies/bestexoticmarigoldhotel.jpg"),"https://zh.wikipedia.org/wiki/%E9%87%91%E7%9B%9E%E8%8A%B1%E5%A4%A7%E9%85%92%E5%BA%97" %>
+		<%= movierow "秋天裡的春光","<p>一位75歲、卻有著無限青春活力的老人，悲喜交集的故事。</p><p>范達是一個永遠的夢想家，總是遊戲人生，愈老愈瘋。他帶有赤子心的行為舉止，卻使他所鍾愛的妻子艾蜜莉頭疼不已，屢屢勸阻無效。一連串的事件豐富了、快樂了范達的生命，也影響了鎮日為他操煩的妻子。於是艾蜜莉決定陪他共同扮演、體驗豐盛快樂的美麗人生...</p>","片長95分鐘",@getImgPath("movies/autumnspring.jpg"),"http://app2.atmovies.com.tw/film/facz60286476/" %>
+	</table>
+</div>

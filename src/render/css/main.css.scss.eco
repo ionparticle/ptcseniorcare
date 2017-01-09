@@ -116,12 +116,6 @@ ul.footer_pages {
 .eldercare_title {
 	min-width: 14em;
 }
-.movie-title {
-	min-width: 8em;
-}
-.movie-length {
-	min-width: 7em;
-}
 .obj-num-title {
 	min-width: 4em;
 }
@@ -379,3 +373,16 @@ $planning_table_radius: 5em;
 
 /* 課程之成果 */
 /* Results */
+
+/* 長照相關連結 */
+/* Resources */
+
+/* 長照相關連結 > 影片資源 */
+/* Resources > Movies */
+
+.resources_movies_title {
+	width: 8.5em;
+}
+.resources_movies_length {
+	width: 7.5em;
+}
