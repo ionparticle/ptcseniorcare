@@ -2,51 +2,39 @@
 layout: "main"
 category: "長照相關連結"
 ---
+<% gamerow = (title,summary,poster,link) => %>
+	<tr>
+		<td><img src="<%- poster %>"></td>
+		<td><h5><a href="<%- link %>"><%- title %></a></h5></td>
+		<td><%- summary %></td>
+	</tr>
+<% end %>
+
 <div class="content">
 
 <h1>桌遊媒材</h1>
 <h2>（一）適合作為學生體驗學習的媒材</h2>
 <table class="table table-hover">
 	<tr>
-		<th>媒材名稱</th>
+		<th class="resources_books_cover"></th>
+		<th class="resources_movies_title">媒材名稱</th>
 		<th>說明</th>
 	</tr>
-	<tr>
-		<td>CV人生履歷</td>
-		<td>人生從幼年到老年是一連串的選擇</td>
-	</tr>
+	<%= gamerow "CV人生履歷","人生從幼年到老年是一連串的選擇",@getImgPath("games/cv.jpg"),"http://www.books.com.tw/products/N010740087" %>
 </table>
 <h2>（二）適合提供給學生和長者互動的媒材</h2>
 <table class="table table-hover">
 	<tr>
-		<th>桌遊名稱</th>
+		<th class="resources_books_cover"></th>
+		<th class="resources_movies_title">桌遊名稱</th>
 		<th>說明</th>
 	</tr>
-	<tr>
-		<td>伐木工人</td>
-		<td>運用手眼協調的操作性桌遊，適合老少一起玩。（利用手中的斧頭道具，敲落一圈圈的樹皮或樹幹）</td>
-	</tr>
-	<tr>
-		<td>超級犀牛</td>
-		<td>運用手眼協調的操作性桌遊，適合老少一起玩。（利用紙卡蓋房子，一層疊一層好刺激）</td>
-	</tr>
-	<tr>
-		<td>動手不動口</td>
-		<td>運用手眼協調的操作性桌遊，看看誰的手最靈光，適合老少一起玩。（當牌翻開時，玩家儘快擺出牌上的手勢，最慢的玩家就輸了）</td>
-	</tr>
-	<tr>
-		<td>一根香腸</td>
-		<td>讓大家回味傳統香腸攤玩骰子的遊戲，適合平常不接觸桌遊的老人家，上手簡單，懷舊有趣。
-			（人數3-5人，遊戲時間30分鐘）</td>
-	</tr>
-	<tr>
-		<td>撲克牌</td>
-		<td>進行各種益智活動，例如：牌七、找鬼牌、撿紅點、二十一點、大老二…等。</td>
-	</tr>
-	<tr>
-		<td>快手疊杯</td>
-		<td>運用手眼協調，並結合空間、顏色概念的操作型桌遊。</td>
-	</tr>
+	<%= gamerow "伐木工人","運用手眼協調的操作性桌遊，適合老少一起玩。（利用手中的斧頭道具，敲落一圈圈的樹皮或樹幹）",@getImgPath("games/lumberjack.jpg"),"http://www.boardgamelove.com.tw/core/article.php?id=361" %>
+	<%= gamerow "超級犀牛","運用手眼協調的操作性桌遊，適合老少一起玩。（利用紙卡蓋房子，一層疊一層好刺激）",@getImgPath("games/superrhino.jpg"),"http://blog.yam.com/catb801106/article/58483552" %>
+	<%= gamerow "動手不動口","運用手眼協調的操作性桌遊，看看誰的手最靈光，適合老少一起玩。（當牌翻開時，玩家儘快擺出牌上的手勢，最慢的玩家就輸了）",@getImgPath("games/handsup.jpg"),"http://www.books.com.tw/products/N000491965" %>
+	<%= gamerow "一根香腸","<p>讓大家回味傳統香腸攤玩骰子的遊戲，適合平常不接觸桌遊的老人家，上手簡單，懷舊有趣。</p><p>（人數3-5人，遊戲時間30分鐘）</p>",@getImgPath("games/sausage.jpg"),"https://bd-boardgame.com/2015/10/22/%E6%B4%BE%E5%B0%8D%E6%A1%8C%E9%81%8A-%E4%B8%80%E6%A0%B9%E9%A6%99%E8%85%B8-the-eng-chiang-%E8%A6%8F%E5%89%87%E4%BB%8B%E7%B4%B9/" %>
+	<%= gamerow "撲克牌","進行各種益智活動，例如：牌七、找鬼牌、撿紅點、二十一點、大老二…等。",@getImgPath("games/poker.jpg"),"https://zh.wikipedia.org/zh-tw/%E6%89%91%E5%85%8B%E7%89%8C" %>
+	<%= gamerow "快手疊杯","運用手眼協調，並結合空間、顏色概念的操作型桌遊。",@getImgPath("games/speedycups.jpg"),"http://punchboardgame.pixnet.net/blog/post/377779871-%E5%BF%AB%E6%89%8B%E7%96%8A%E6%9D%AF-speed-cups-%E7%B9%81%E9%AB%94%E4%B8%AD%E6%96%87%E7%89%88-%E9%96%8B%E7%AE%B1%E5%8F%8A%E8%A6%8F%E5%89%87-by-" %>
 </table>
 
 </div>
